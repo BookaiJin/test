@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    compile files('/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-accumulator-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-activator-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-bi-engine-third-5.1.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-core-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-datasource-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-decision-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-decision-report-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-report-engine-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-schedule-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-schedule-report-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-swift-log-adaptor-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-third-10.0.jar',
+            '/Users/bokai/work/Fanruan/product/FineReport10.0/webapps/webroot/WEB-INF/lib/fine-webui-10.0.jar')
+}
+
+test {
+    useJUnitPlatform()
+}
